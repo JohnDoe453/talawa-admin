@@ -65,6 +65,8 @@ jobs:
     needs: CodeQL
     steps:
       - uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: yarn
       - name: test
         run: npm test -- --coverage
 
