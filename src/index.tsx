@@ -28,7 +28,7 @@ const httpLink = new HttpLink({
 
 const test = () => {
   console.log('TEST');
-}
+};
 
 const client: ApolloClient<NormalizedCacheObject> = new ApolloClient({
   cache: new InMemoryCache(),
